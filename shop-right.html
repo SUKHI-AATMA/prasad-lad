@@ -1,0 +1,2247 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>Polytico</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<!--<link rel="stylesheet" href="css/font-awesome.css">-->
+	<link rel="stylesheet" href="css/font-awesome5.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-custom.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="color-main">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form" action="/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Type Search Keyword Here" id="modal-search-input">
+				</div>
+				<button type="submit"></button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls p-normal">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+
+		-->
+
+		</div>
+	</div><!-- eof .modal -->
+
+	<!--login form -->
+	<div class="modal ds" id="login_modal">
+		<div class="modal_login_form">
+			<div class="menu-left">
+				<img src="images/logo_bg.jpg" alt="bg">
+			</div>
+
+			<div class="menu-right ds">
+
+				<a href="javascript:void(0)" data-dismiss="modal" aria-label="Close" class="remove">×</a>
+
+				<h5 class="special-heading above">Register or</h5>
+				<h4 class="special-heading underline">Sign In</h4>
+
+				<div class="divider-50"></div>
+
+				<form>
+
+					<div class="form-group has-placeholder">
+						<label for="login-email">Email address</label>
+						<i class="text-white fas fa-envelope"></i>
+						<input type="text" class="form-control" id="login-email" placeholder="Email">
+					</div>
+
+					<div class="form-group has-placeholder">
+						<label for="login-password">Password</label>
+						<i class="text-white fas fa-lock"></i>
+						<input type="password" class="form-control" id="login-password" placeholder="Password">
+					</div>
+
+					<div class="checkbox form-group">
+						<input type="checkbox" id="remember_me_checkbox">
+						<label class="mb-0" for="remember_me_checkbox">Remember Me
+						</label>
+					</div>
+
+					<button type="submit" class="btn btn-small btn-maincolor">Log In</button>
+
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<!--login form -->
+	<div class="modal ds" id="login_modal2">
+		<div class="modal_login_form">
+
+			<div class="menu-right ds">
+
+				<a href="javascript:void(0)" data-dismiss="modal" aria-label="Close" class="remove">×</a>
+
+				<h4 class="special-heading underline">Sign In</h4>
+
+				<div class="divider-50"></div>
+
+				<form>
+
+					<div class="form-group has-placeholder">
+						<label for="login-email2">Email address</label>
+						<i class="text-white fas fa-envelope"></i>
+						<input type="text" class="form-control" id="login-email2" placeholder="Email">
+					</div>
+
+					<div class="form-group has-placeholder">
+						<label for="login-password2">Password</label>
+						<i class="text-white fas fa-lock"></i>
+						<input type="password" class="form-control" id="login-password2" placeholder="Password">
+					</div>
+
+					<div class="checkbox form-group">
+						<input type="checkbox" id="remember_me_checkbox2">
+						<label class="mb-0" for="remember_me_checkbox">Remember Me
+						</label>
+					</div>
+
+					<button type="submit" class="btn btn-small btn-maincolor">Log In</button>
+
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<!--login form -->
+	<div class="modal ds" id="registrate_modal">
+		<div class="modal_login_form">
+
+			<div class="menu-right ds">
+
+				<a href="javascript:void(0)" data-dismiss="modal" aria-label="Close" class="remove">×</a>
+
+				<h4 class="special-heading underline">Register</h4>
+
+				<div class="divider-50"></div>
+
+				<form>
+
+					<div class="form-group has-placeholder">
+						<label for="login-email3">Email address</label>
+						<i class="text-white fas fa-envelope"></i>
+						<input type="text" class="form-control" id="login-email3" placeholder="Email">
+					</div>
+
+					<div class="form-group has-placeholder">
+						<label for="login-password3">Password</label>
+						<i class="text-white fas fa-lock"></i>
+						<input type="password" class="form-control" id="login-password3" placeholder="Password">
+					</div>
+
+
+					<button type="submit" class="btn btn-small btn-maincolor">Register</button>
+
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			<header class="page_header_side page_header_side_special header_slide header_side_right ds">
+
+				<div class="scrollbar-macosx">
+					<div class="side_header_inner">
+						<p class="text-right mb-0 close-wrapper"><a href="javascript:void(0)">×</a></p>
+						<div class="header-side-menu">
+							<!-- main side nav start -->
+							<nav class="mainmenu_side_wrapper">
+								<ul class="nav menu-click">
+
+
+									<li class="active">
+										<a href="index.html">Home</a>
+										<ul>
+											<li>
+												<a href="index.html">Candidate</a>
+											</li>
+											<li>
+												<a href="index_party.html">Party</a>
+											</li>
+											<li>
+												<a href="index_charity.html">Charity</a>
+											</li>
+											<li>
+												<a href="index_church.html">Church</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="about.html">Pages</a>
+										<ul>
+
+
+											<li>
+												<a href="about.html">About</a>
+											</li>
+
+											<li>
+												<a href="manifest.html">Manifest</a>
+											</li>
+
+											<li>
+												<a href="donate.html">Donate</a>
+											</li>
+
+											<li>
+												<a href="pricing.html">Pricing</a>
+											</li>
+
+											<!-- contacts -->
+											<li>
+												<a href="contact.html">Contacts</a>
+												<ul>
+													<li>
+														<a href="contact.html">Contact 1</a>
+													</li>
+													<li>
+														<a href="contact2.html">Contact 2</a>
+													</li>
+													<li>
+														<a href="contact3.html">Contact 3</a>
+													</li>
+													<li>
+														<a href="contact4.html">Contact 4</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof contacts -->
+
+
+											<!-- features -->
+											<li>
+												<a href="shortcodes_iconbox.html">Shortcodes</a>
+												<ul>
+													<li>
+														<a href="shortcodes_typography.html">Typography</a>
+													</li>
+													<li>
+														<a href="shortcodes_buttons.html">Buttons</a>
+													</li>
+													<li>
+														<a href="shortcodes_pricing.html">Pricing</a>
+													</li>
+													<li>
+														<a href="shortcodes_iconbox.html">Icon Boxes</a>
+													</li>
+													<li>
+														<a href="shortcodes_progress.html">Progress</a>
+													</li>
+													<li>
+														<a href="shortcodes_tabs.html">Tabs &amp; Collapse</a>
+													</li>
+													<li>
+														<a href="shortcodes_bootstrap.html">Bootstrap Elements</a>
+													</li>
+													<li>
+														<a href="shortcodes_animation.html">Animation</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof shortcodes -->
+
+											<li>
+												<a href="shortcodes_widgets_default.html">Widgets</a>
+												<ul>
+													<li>
+														<a href="shortcodes_widgets_default.html">Default Widgets</a>
+													</li>
+													<li>
+														<a href="shortcodes_widgets_shop.html">Shop Widgets</a>
+													</li>
+													<li>
+														<a href="shortcodes_widgets_custom.html">Custom Widgets</a>
+													</li>
+												</ul>
+
+											</li>
+
+											<!-- shop -->
+											<li>
+												<a href="shop-right.html">Shop</a>
+												<ul>
+													<li>
+														<a href="shop-account-dashboard.html">Account</a>
+														<ul>
+
+															<li>
+																<a href="shop-account-details.html">Account details</a>
+															</li>
+															<li>
+																<a href="shop-account-addresses.html">Addresses</a>
+															</li>
+															<li>
+																<a href="shop-account-address-edit.html">Edit Address</a>
+															</li>
+															<li>
+																<a href="shop-account-orders.html">Orders</a>
+															</li>
+															<li>
+																<a href="shop-account-order-single.html">Single Order</a>
+															</li>
+															<li>
+																<a href="shop-account-downloads.html">Downloads</a>
+															</li>
+															<li>
+																<a href="shop-account-password-reset.html">Password Reset</a>
+															</li>
+															<li>
+																<a href="shop-account-login.html">Login/Logout</a>
+															</li>
+
+														</ul>
+													</li>
+													<li>
+														<a href="shop-right.html">Right Sidebar</a>
+													</li>
+													<li>
+														<a href="shop-left.html">Left Sidebar</a>
+													</li>
+													<li>
+														<a href="shop-product-right.html">Product Right Sidebar</a>
+													</li>
+													<li>
+														<a href="shop-product-left.html">Product Left Sidebar</a>
+													</li>
+													<li>
+														<a href="shop-cart.html">Cart</a>
+													</li>
+													<li>
+														<a href="shop-checkout.html">Checkout</a>
+													</li>
+													<li>
+														<a href="shop-order-received.html">Order Received</a>
+													</li>
+
+												</ul>
+											</li>
+											<!-- eof shop -->
+
+											<!-- eof pages -->
+											<li>
+												<a href="services.html">Services</a>
+												<ul>
+													<li>
+														<a href="services.html">Service 1</a>
+													</li>
+													<li>
+														<a href="services2.html">Service 2</a>
+													</li>
+													<li>
+														<a href="service-single.html">Single Service</a>
+													</li>
+												</ul>
+											</li>
+
+
+											<!-- gallery -->
+											<li>
+												<a href="gallery-image.html">Gallery</a>
+												<ul>
+													<!-- Gallery image only -->
+													<li>
+														<a href="gallery-image.html">Regular</a>
+														<ul>
+															<li>
+																<a href="gallery-image-2-cols.html">2 columns</a>
+															</li>
+															<li>
+																<a href="gallery-image.html">3 columns</a>
+															</li>
+															<li>
+																<a href="gallery-image-4-cols-fullwidth.html">4 columns fullwidth</a>
+															</li>
+
+														</ul>
+													</li>
+													<!-- eof Gallery image only -->
+
+													<!-- Gallery with title -->
+													<li>
+														<a href="gallery-title.html">Image With Title</a>
+														<ul>
+															<li>
+																<a href="gallery-title-2-cols.html">2 columns</a>
+															</li>
+															<li>
+																<a href="gallery-title.html">3 column</a>
+															</li>
+															<li>
+																<a href="gallery-title-4-cols-fullwidth.html">4 columns fullwidth</a>
+															</li>
+														</ul>
+													</li>
+													<!-- eof Gallery with title -->
+
+													<!-- Gallery with excerpt -->
+													<li>
+														<a href="gallery-excerpt.html">Extended</a>
+														<ul>
+															<li>
+																<a href="gallery-excerpt-2-cols.html">2 columns</a>
+															</li>
+															<li>
+																<a href="gallery-excerpt.html">3 column</a>
+															</li>
+															<li>
+																<a href="gallery-excerpt-4-cols-fullwidth.html">4 columns fullwdith</a>
+															</li>
+														</ul>
+													</li>
+													<!-- eof Gallery with excerpt -->
+
+													<li>
+														<a href="gallery-tiled.html">Tiled Gallery</a>
+													</li>
+
+													<!-- Gallery item -->
+													<li>
+														<a href="gallery-single.html">Gallery Item</a>
+														<ul>
+															<li>
+																<a href="gallery-single.html">Style 1</a>
+															</li>
+															<li>
+																<a href="gallery-single2.html">Style 2</a>
+															</li>
+														</ul>
+													</li>
+													<!-- eof Gallery item -->
+												</ul>
+											</li>
+											<!-- eof Gallery -->
+
+											<li>
+												<a href="team.html">Team</a>
+												<ul>
+													<li>
+														<a href="team.html">Team</a>
+													</li>
+													<li>
+														<a href="team-single.html">Team Member</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="comingsoon.html">Comingsoon</a>
+											</li>
+
+											<li>
+												<a href="faq.html">FAQ</a>
+												<ul>
+													<li>
+														<a href="faq.html">FAQ</a>
+													</li>
+													<li>
+														<a href="faq2.html">FAQ 2</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="404.html">404</a>
+											</li>
+
+										</ul>
+									</li>
+									<!-- eof services -->
+									<li>
+										<a href="#">Features</a>
+										<div class="mega-menu">
+											<ul class="mega-menu-row">
+												<li class="mega-menu-col">
+													<a href="#">Headers</a>
+													<ul>
+														<li>
+															<a href="header1.html">Header Type 1</a>
+														</li>
+														<li>
+															<a href="header2.html">Header Type 2</a>
+														</li>
+														<li>
+															<a href="header3.html">Header Type 3</a>
+														</li>
+														<li>
+															<a href="header4.html">Header Type 4</a>
+														</li>
+														<li>
+															<a href="header5.html">Header Type 5</a>
+														</li>
+														<li>
+															<a href="header6.html">Header Type 6</a>
+														</li>
+													</ul>
+												</li>
+												<li class="mega-menu-col">
+													<a href="#">Side Menus</a>
+													<ul>
+														<li>
+															<a href="header-side.html">Push Left</a>
+														</li>
+														<li>
+															<a href="header-side-right.html">Push Right</a>
+														</li>
+														<li>
+															<a href="header-side-slide.html">Slide Left</a>
+														</li>
+														<li>
+															<a href="header-side-slide-right.html">Slide Right</a>
+														</li>
+														<li>
+															<a href="header-side-sticked.html">Sticked Left</a>
+														</li>
+														<li>
+															<a href="header-side-sticked-right.html">Sticked Right</a>
+														</li>
+													</ul>
+												</li>
+												<li class="mega-menu-col">
+													<a href="title1.html">Title Sections</a>
+													<ul>
+														<li>
+															<a href="title1.html">Title section 1</a>
+														</li>
+														<li>
+															<a href="title2.html">Title section 2</a>
+														</li>
+														<li>
+															<a href="title3.html">Title section 3</a>
+														</li>
+														<li>
+															<a href="title4.html">Title section 4</a>
+														</li>
+														<li>
+															<a href="title5.html">Title section 5</a>
+														</li>
+														<li>
+															<a href="title6.html">Title section 6</a>
+														</li>
+													</ul>
+												</li>
+												<li class="mega-menu-col">
+													<a href="footer1.html#footer">Footers</a>
+													<ul>
+														<li>
+															<a href="footer1.html#footer">Footer Type 1</a>
+														</li>
+														<li>
+															<a href="footer2.html#footer">Footer Type 2</a>
+														</li>
+														<li>
+															<a href="footer3.html#footer">Footer Type 3</a>
+														</li>
+														<li>
+															<a href="footer4.html#footer">Footer Type 4</a>
+														</li>
+														<li>
+															<a href="footer5.html#footer">Footer Type 5</a>
+														</li>
+														<li>
+															<a href="footer6.html#footer">Footer Type 6</a>
+														</li>
+													</ul>
+												</li>
+												<li class="mega-menu-col">
+													<a href="copyright1.html#copyright">Copyright</a>
+
+													<ul>
+														<li>
+															<a href="copyright1.html#copyright">Copyright 1</a>
+														</li>
+														<li>
+															<a href="copyright2.html#copyright">Copyright 2</a>
+														</li>
+														<li>
+															<a href="copyright3.html#copyright">Copyright 3</a>
+														</li>
+														<li>
+															<a href="copyright4.html#copyright">Copyright 4</a>
+														</li>
+														<li>
+															<a href="copyright5.html#copyright">Copyright 5</a>
+														</li>
+														<li>
+															<a href="copyright6.html#copyright">Copyright 6</a>
+														</li>
+													</ul>
+												</li>
+
+											</ul>
+										</div> <!-- eof mega menu -->
+									</li>
+									<!-- eof features -->
+
+									<!-- blog -->
+									<li>
+										<a href="blog-left.html">News</a>
+										<ul>
+
+											<li>
+												<a href="blog-right.html">Right Sidebar</a>
+											</li>
+											<li>
+												<a href="blog-left.html">Left Sidebar</a>
+											</li>
+											<li>
+												<a href="blog-full.html">No Sidebar</a>
+											</li>
+											<li>
+												<a href="blog-grid.html">News Grid</a>
+											</li>
+
+											<li>
+												<a href="blog-single-right.html">Post</a>
+												<ul>
+													<li>
+														<a href="blog-single-right.html">Right Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-left.html">Left Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-full.html">No Sidebar</a>
+													</li>
+												</ul>
+											</li>
+
+											<li>
+												<a href="blog-single-video-right.html">Video Post</a>
+												<ul>
+													<li>
+														<a href="blog-single-video-right.html">Right Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-video-left.html">Left Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-video-full.html">No Sidebar</a>
+													</li>
+												</ul>
+											</li>
+
+										</ul>
+									</li>
+									<!-- eof blog -->
+
+									<!-- events -->
+									<li>
+										<a href="events-left.html">Events</a>
+										<ul>
+											<li>
+												<a href="events-left.html">Left Sidebar</a>
+											</li>
+											<li>
+												<a href="events-right.html">Right Sidebar</a>
+											</li>
+											<li>
+												<a href="events-full.html">Full Width</a>
+											</li>
+											<li>
+												<a href="event-single-left.html">Single Event</a>
+												<ul>
+													<li>
+														<a href="event-single-left.html">Left Sidebar</a>
+													</li>
+													<li>
+														<a href="event-single-right.html">Right Sidebar</a>
+													</li>
+													<li>
+														<a href="event-single-full.html">Full Width</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<!-- eof events -->
+								</ul>
+							</nav>
+							<!-- eof main side nav -->
+						</div>
+
+					</div>
+				</div>
+			</header>
+
+			<!--topline section visible only on small screens|-->
+			<section class="page_topline cs s-py-5">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-6 text-center text-md-left">
+							<span class="hidden-below-xl "><i class="fas fa-rss pr-2 "></i>News: Street Grade Separated Intersection Project</span>
+							<span class="header-icons hidden-above-xl">
+								<a href="contact.html">
+									<i class="fas fa-envelope"></i>
+								</a>
+								<a href="javascript:void(0)" class="login_modal_window">
+									<i class="fas fa-user "></i>
+								</a>
+								<a href="#" class="search_modal_button ">
+									<i class="fas fa-search"></i>
+								</a>
+							</span>
+						</div>
+						<div class="col-6 text-center text-lg-right">
+							<span class="icon-inline">
+								<span class="icon-styled ">
+									<i class="fas fa-phone"></i>
+								</span>
+								<span>
+									0800 123 4567
+								</span>
+							</span>
+							<span class="icon-inline hidden-below-md">
+								<span class="icon-styled ">
+									<i class="fas fa-pencil-alt"></i>
+								</span>
+								<span>
+									<a href="mailto:example@example.com">polytico@example.com</a>
+								</span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--eof topline-->
+
+			<!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->
+			<header class="page_header ls justify-nav-center">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-xl-2 col-md-4 col-sm-3 col-9">
+							<a href="./" class="logo">
+								<img src="images/logo.png" alt="img">
+							</a>
+						</div>
+						<div class="col-xl-8 col-1 d-flex align-items-center left px-1">
+							<!-- main nav start -->
+							<nav class="top-nav">
+								<ul class="nav sf-menu">
+
+
+									<li class="active">
+										<a href="index.html">Home</a>
+										<ul>
+											<li>
+												<a href="index.html">Candidate</a>
+											</li>
+											<li>
+												<a href="index_party.html">Party</a>
+											</li>
+											<li>
+												<a href="index_charity.html">Charity</a>
+											</li>
+											<li>
+												<a href="index_church.html">Church</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="about.html">Pages</a>
+										<ul>
+
+
+											<li>
+												<a href="about.html">About</a>
+											</li>
+
+											<li>
+												<a href="manifest.html">Manifest</a>
+											</li>
+
+											<li>
+												<a href="donate.html">Donate</a>
+											</li>
+
+											<li>
+												<a href="pricing.html">Pricing</a>
+											</li>
+
+											<!-- contacts -->
+											<li>
+												<a href="contact.html">Contacts</a>
+												<ul>
+													<li>
+														<a href="contact.html">Contact 1</a>
+													</li>
+													<li>
+														<a href="contact2.html">Contact 2</a>
+													</li>
+													<li>
+														<a href="contact3.html">Contact 3</a>
+													</li>
+													<li>
+														<a href="contact4.html">Contact 4</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof contacts -->
+
+
+											<!-- features -->
+											<li>
+												<a href="shortcodes_iconbox.html">Shortcodes</a>
+												<ul>
+													<li>
+														<a href="shortcodes_typography.html">Typography</a>
+													</li>
+													<li>
+														<a href="shortcodes_buttons.html">Buttons</a>
+													</li>
+													<li>
+														<a href="shortcodes_pricing.html">Pricing</a>
+													</li>
+													<li>
+														<a href="shortcodes_iconbox.html">Icon Boxes</a>
+													</li>
+													<li>
+														<a href="shortcodes_progress.html">Progress</a>
+													</li>
+													<li>
+														<a href="shortcodes_tabs.html">Tabs &amp; Collapse</a>
+													</li>
+													<li>
+														<a href="shortcodes_bootstrap.html">Bootstrap Elements</a>
+													</li>
+													<li>
+														<a href="shortcodes_animation.html">Animation</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof shortcodes -->
+
+											<li>
+												<a href="shortcodes_widgets_default.html">Widgets</a>
+												<ul>
+													<li>
+														<a href="shortcodes_widgets_default.html">Default Widgets</a>
+													</li>
+													<li>
+														<a href="shortcodes_widgets_shop.html">Shop Widgets</a>
+													</li>
+													<li>
+														<a href="shortcodes_widgets_custom.html">Custom Widgets</a>
+													</li>
+												</ul>
+
+											</li>
+
+											<!-- shop -->
+											<li>
+												<a href="shop-right.html">Shop</a>
+												<ul>
+													<li>
+														<a href="shop-account-dashboard.html">Account</a>
+														<ul>
+
+															<li>
+																<a href="shop-account-details.html">Account details</a>
+															</li>
+															<li>
+																<a href="shop-account-addresses.html">Addresses</a>
+															</li>
+															<li>
+																<a href="shop-account-address-edit.html">Edit Address</a>
+															</li>
+															<li>
+																<a href="shop-account-orders.html">Orders</a>
+															</li>
+															<li>
+																<a href="shop-account-order-single.html">Single Order</a>
+															</li>
+															<li>
+																<a href="shop-account-downloads.html">Downloads</a>
+															</li>
+															<li>
+																<a href="shop-account-password-reset.html">Password Reset</a>
+															</li>
+															<li>
+																<a href="shop-account-login.html">Login/Logout</a>
+															</li>
+
+														</ul>
+													</li>
+													<li>
+														<a href="shop-right.html">Right Sidebar</a>
+													</li>
+													<li>
+														<a href="shop-left.html">Left Sidebar</a>
+													</li>
+													<li>
+														<a href="shop-product-right.html">Product Right Sidebar</a>
+													</li>
+													<li>
+														<a href="shop-product-left.html">Product Left Sidebar</a>
+													</li>
+													<li>
+														<a href="shop-cart.html">Cart</a>
+													</li>
+													<li>
+														<a href="shop-checkout.html">Checkout</a>
+													</li>
+													<li>
+														<a href="shop-order-received.html">Order Received</a>
+													</li>
+
+												</ul>
+											</li>
+											<!-- eof shop -->
+
+											<!-- eof pages -->
+											<li>
+												<a href="services.html">Services</a>
+												<ul>
+													<li>
+														<a href="services.html">Service 1</a>
+													</li>
+													<li>
+														<a href="services2.html">Service 2</a>
+													</li>
+													<li>
+														<a href="service-single.html">Single Service</a>
+													</li>
+												</ul>
+											</li>
+
+
+											<!-- gallery -->
+											<li>
+												<a href="gallery-image.html">Gallery</a>
+												<ul>
+													<!-- Gallery image only -->
+													<li>
+														<a href="gallery-image.html">Regular</a>
+														<ul>
+															<li>
+																<a href="gallery-image-2-cols.html">2 columns</a>
+															</li>
+															<li>
+																<a href="gallery-image.html">3 columns</a>
+															</li>
+															<li>
+																<a href="gallery-image-4-cols-fullwidth.html">4 columns fullwidth</a>
+															</li>
+
+														</ul>
+													</li>
+													<!-- eof Gallery image only -->
+
+													<!-- Gallery with title -->
+													<li>
+														<a href="gallery-title.html">Image With Title</a>
+														<ul>
+															<li>
+																<a href="gallery-title-2-cols.html">2 columns</a>
+															</li>
+															<li>
+																<a href="gallery-title.html">3 column</a>
+															</li>
+															<li>
+																<a href="gallery-title-4-cols-fullwidth.html">4 columns fullwidth</a>
+															</li>
+														</ul>
+													</li>
+													<!-- eof Gallery with title -->
+
+													<!-- Gallery with excerpt -->
+													<li>
+														<a href="gallery-excerpt.html">Extended</a>
+														<ul>
+															<li>
+																<a href="gallery-excerpt-2-cols.html">2 columns</a>
+															</li>
+															<li>
+																<a href="gallery-excerpt.html">3 column</a>
+															</li>
+															<li>
+																<a href="gallery-excerpt-4-cols-fullwidth.html">4 columns fullwdith</a>
+															</li>
+														</ul>
+													</li>
+													<!-- eof Gallery with excerpt -->
+
+													<li>
+														<a href="gallery-tiled.html">Tiled Gallery</a>
+													</li>
+
+													<!-- Gallery item -->
+													<li>
+														<a href="gallery-single.html">Gallery Item</a>
+														<ul>
+															<li>
+																<a href="gallery-single.html">Style 1</a>
+															</li>
+															<li>
+																<a href="gallery-single2.html">Style 2</a>
+															</li>
+														</ul>
+													</li>
+													<!-- eof Gallery item -->
+												</ul>
+											</li>
+											<!-- eof Gallery -->
+
+											<li>
+												<a href="team.html">Team</a>
+												<ul>
+													<li>
+														<a href="team.html">Team</a>
+													</li>
+													<li>
+														<a href="team-single.html">Team Member</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="comingsoon.html">Comingsoon</a>
+											</li>
+
+											<li>
+												<a href="faq.html">FAQ</a>
+												<ul>
+													<li>
+														<a href="faq.html">FAQ</a>
+													</li>
+													<li>
+														<a href="faq2.html">FAQ 2</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="404.html">404</a>
+											</li>
+
+										</ul>
+									</li>
+									<!-- eof services -->
+									<li>
+										<a href="#">Features</a>
+										<div class="mega-menu">
+											<ul class="mega-menu-row">
+												<li class="mega-menu-col">
+													<a href="#">Headers</a>
+													<ul>
+														<li>
+															<a href="header1.html">Header Type 1</a>
+														</li>
+														<li>
+															<a href="header2.html">Header Type 2</a>
+														</li>
+														<li>
+															<a href="header3.html">Header Type 3</a>
+														</li>
+														<li>
+															<a href="header4.html">Header Type 4</a>
+														</li>
+														<li>
+															<a href="header5.html">Header Type 5</a>
+														</li>
+														<li>
+															<a href="header6.html">Header Type 6</a>
+														</li>
+													</ul>
+												</li>
+												<li class="mega-menu-col">
+													<a href="#">Side Menus</a>
+													<ul>
+														<li>
+															<a href="header-side.html">Push Left</a>
+														</li>
+														<li>
+															<a href="header-side-right.html">Push Right</a>
+														</li>
+														<li>
+															<a href="header-side-slide.html">Slide Left</a>
+														</li>
+														<li>
+															<a href="header-side-slide-right.html">Slide Right</a>
+														</li>
+														<li>
+															<a href="header-side-sticked.html">Sticked Left</a>
+														</li>
+														<li>
+															<a href="header-side-sticked-right.html">Sticked Right</a>
+														</li>
+													</ul>
+												</li>
+												<li class="mega-menu-col">
+													<a href="title1.html">Title Sections</a>
+													<ul>
+														<li>
+															<a href="title1.html">Title section 1</a>
+														</li>
+														<li>
+															<a href="title2.html">Title section 2</a>
+														</li>
+														<li>
+															<a href="title3.html">Title section 3</a>
+														</li>
+														<li>
+															<a href="title4.html">Title section 4</a>
+														</li>
+														<li>
+															<a href="title5.html">Title section 5</a>
+														</li>
+														<li>
+															<a href="title6.html">Title section 6</a>
+														</li>
+													</ul>
+												</li>
+												<li class="mega-menu-col">
+													<a href="footer1.html#footer">Footers</a>
+													<ul>
+														<li>
+															<a href="footer1.html#footer">Footer Type 1</a>
+														</li>
+														<li>
+															<a href="footer2.html#footer">Footer Type 2</a>
+														</li>
+														<li>
+															<a href="footer3.html#footer">Footer Type 3</a>
+														</li>
+														<li>
+															<a href="footer4.html#footer">Footer Type 4</a>
+														</li>
+														<li>
+															<a href="footer5.html#footer">Footer Type 5</a>
+														</li>
+														<li>
+															<a href="footer6.html#footer">Footer Type 6</a>
+														</li>
+													</ul>
+												</li>
+												<li class="mega-menu-col">
+													<a href="copyright1.html#copyright">Copyright</a>
+
+													<ul>
+														<li>
+															<a href="copyright1.html#copyright">Copyright 1</a>
+														</li>
+														<li>
+															<a href="copyright2.html#copyright">Copyright 2</a>
+														</li>
+														<li>
+															<a href="copyright3.html#copyright">Copyright 3</a>
+														</li>
+														<li>
+															<a href="copyright4.html#copyright">Copyright 4</a>
+														</li>
+														<li>
+															<a href="copyright5.html#copyright">Copyright 5</a>
+														</li>
+														<li>
+															<a href="copyright6.html#copyright">Copyright 6</a>
+														</li>
+													</ul>
+												</li>
+
+											</ul>
+										</div> <!-- eof mega menu -->
+									</li>
+									<!-- eof features -->
+
+									<!-- blog -->
+									<li>
+										<a href="blog-left.html">News</a>
+										<ul>
+
+											<li>
+												<a href="blog-right.html">Right Sidebar</a>
+											</li>
+											<li>
+												<a href="blog-left.html">Left Sidebar</a>
+											</li>
+											<li>
+												<a href="blog-full.html">No Sidebar</a>
+											</li>
+											<li>
+												<a href="blog-grid.html">News Grid</a>
+											</li>
+
+											<li>
+												<a href="blog-single-right.html">Post</a>
+												<ul>
+													<li>
+														<a href="blog-single-right.html">Right Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-left.html">Left Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-full.html">No Sidebar</a>
+													</li>
+												</ul>
+											</li>
+
+											<li>
+												<a href="blog-single-video-right.html">Video Post</a>
+												<ul>
+													<li>
+														<a href="blog-single-video-right.html">Right Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-video-left.html">Left Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-video-full.html">No Sidebar</a>
+													</li>
+												</ul>
+											</li>
+
+										</ul>
+									</li>
+									<!-- eof blog -->
+
+									<!-- events -->
+									<li>
+										<a href="events-left.html">Events</a>
+										<ul>
+											<li>
+												<a href="events-left.html">Left Sidebar</a>
+											</li>
+											<li>
+												<a href="events-right.html">Right Sidebar</a>
+											</li>
+											<li>
+												<a href="events-full.html">Full Width</a>
+											</li>
+											<li>
+												<a href="event-single-left.html">Single Event</a>
+												<ul>
+													<li>
+														<a href="event-single-left.html">Left Sidebar</a>
+													</li>
+													<li>
+														<a href="event-single-right.html">Right Sidebar</a>
+													</li>
+													<li>
+														<a href="event-single-full.html">Full Width</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<!-- eof events -->
+								</ul>
+
+
+							</nav>
+							<!-- eof main nav -->
+							<a href="contact.html" class="btn btn-small btn-maincolor ml-xl-4 mr-3 hidden-below-xl">Join Us</a>
+							<a href="donate.html" class="btn btn-small btn-maincolor2 hidden-below-xl">Donate</a>
+						</div>
+						<div class="col-xl-2 col-md-4 col-sm-6 hidden-below-sm justify-content-end justify-content-xl-start  d-flex align-items-center">
+							<a href="contact.html" class="btn btn-small btn-maincolor ml-xl-4 mr-3 hidden-above-xl">Join Us</a>
+							<a href="donate.html" class="btn btn-small btn-maincolor2 hidden-above-xl">Donate</a>
+							<!--modal search-->
+							<span class="header-icons hidden-below-xl ml-auto">
+								<a href="contact.html">
+									<i class="fas fa-envelope"></i>
+								</a>
+								<a href="javascript:void(0)" class="login_modal_window modal_window">
+									<i class="fas fa-user "></i>
+								</a>
+								<a href="#" class="search_modal_button ">
+									<i class="fas fa-search"></i>
+								</a>
+							</span>
+							<span class="toggle_menu toggle_menu_side toggle_menu_side_special header-slide">
+								<i class="fas fa-bars"></i>
+							</span>
+						</div>
+
+					</div>
+				</div>
+				<!-- header toggler -->
+				<span class="toggle_menu"><span></span></span>
+			</header>
+
+			<section class="page_title ds s-overlay s-parallax s-py-5">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-12 text-center">
+							<h1 class="bold">Shop with Right Sidebar</h1>
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item">
+									<a href="./">Home</a>
+								</li>
+								<li class="breadcrumb-item">
+									<a href="#">Shop</a>
+								</li>
+								<li class="breadcrumb-item active">
+									Shop with Right Sidebar
+								</li>
+							</ol>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+
+			<section class="ls s-py-60 s-py-md-90 s-py-xl-120 c-gutter-60">
+				<div class="container">
+					<div class="row">
+
+						<main class="col-lg-7 col-xl-8">
+							<div class="columns-2">
+
+								<p class="woocommerce-result-count">
+									Showing all 23 results</p>
+								<form class="woocommerce-ordering" method="get">
+									<select name="orderby" class="orderby">
+										<option value="menu_order" selected="selected">Default sorting</option>
+										<option value="popularity">Sort by popularity</option>
+										<option value="rating">Sort by average rating</option>
+										<option value="date">Sort by newness</option>
+										<option value="price">Sort by price: low to high</option>
+										<option value="price-desc">Sort by price: high to low</option>
+									</select>
+								</form>
+
+								<ul class="products">
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<span class="onsale">Sale!</span>
+
+											<img src="images/shop/25.jpg" alt="img">
+
+											<h2>Flying Ninja</h2>
+											<div class="star-rating">
+												<span style="width:80%">Rated <strong
+							class="rating">4.00</strong> out of 5</span>
+											</div>
+											<span class="price">
+												<del>
+													<span>
+														<span>$</span>15.00
+													</span>
+												</del>
+												<ins>
+													<span>
+														<span>$</span>12.00
+													</span>
+												</ins>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-cart.html" class="button product_type_simple add_to_cart_button">Add to
+											cart</a>
+
+									</li>
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<img src="images/shop/14.jpg" alt="img">
+											<h2>Happy Ninja</h2>
+											<div class="star-rating">
+												<span style="width:100%">Rated <strong
+							class="rating">5.00</strong> out of 5</span>
+											</div>
+											<span class="price">
+												<span>
+													<span>$</span>18.00
+												</span>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-cart.html" class="button product_type_simple add_to_cart_button">Add to
+											cart</a>
+									</li>
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<img src="images/shop/04.jpg" alt="img">
+											<h2>Happy Ninja</h2>
+											<div class="star-rating">
+												<span style="width:60%">Rated <strong
+							class="rating">3.00</strong> out of 5</span>
+											</div>
+											<span class="price">
+												<span>
+													<span>$</span>35.00
+												</span>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-cart.html" class="button product_type_simple add_to_cart_button">Add to
+											cart</a>
+									</li>
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<img src="images/shop/12.jpg" alt="img">
+											<h2>Ninja Silhouette</h2>
+											<div class="star-rating">
+												<span style="width:100%">Rated <strong
+							class="rating">5.00</strong> out of 5</span>
+											</div>
+											<span class="price">
+												<span>
+													<span>$</span>20.00
+												</span>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-cart.html" class="button product_type_simple add_to_cart_button">Add to
+											cart</a>
+									</li>
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<img src="images/shop/05.jpg" alt="img">
+											<h2>Ninja Silhouette</h2>
+											<div class="star-rating">
+												<span style="width:80%">Rated <strong
+							class="rating">4.00</strong> out of 5</span>
+											</div>
+											<span class="price">
+												<span>
+													<span>$</span>35.00
+												</span>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-cart.html" class="button product_type_simple add_to_cart_button">Add to
+											cart</a>
+									</li>
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<img src="images/shop/03.jpg" alt="img">
+											<h2>Patient Ninja</h2>
+											<div class="star-rating">
+												<span style="width:93.4%">Rated <strong
+							class="rating">4.67</strong> out of 5</span>
+											</div>
+											<span class="price">
+												<span>
+													<span>$</span>35.00
+												</span>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-cart.html" class="button product_type_simple add_to_cart_button">Add to
+											cart</a>
+									</li>
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<img src="images/shop/09.jpg" alt="img">
+											<h2>Premium Quality</h2>
+											<div class="star-rating">
+												<span style="width:90%">Rated <strong
+							class="rating">4.50</strong> out of 5</span>
+											</div>
+											<span class="price">
+												<span>
+													<span>$</span>20.00
+												</span>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-cart.html" class="button product_type_simple add_to_cart_button">Add to
+											cart</a>
+									</li>
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<span class="onsale">Sale!</span>
+											<img src="images/shop/26.jpg" alt="img">
+											<h2>Premium Quality</h2>
+											<div class="star-rating">
+												<span style="width:40%">Rated <strong
+							class="rating">2.00</strong> out of 5</span>
+											</div>
+											<span class="price">
+												<del>
+													<span>
+														<span>$</span>15.00
+													</span>
+												</del>
+												<ins>
+													<span>
+														<span>$</span>12.00
+													</span>
+												</ins>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-cart.html" class="button product_type_simple add_to_cart_button">Add to
+											cart</a>
+									</li>
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<img src="images/shop/11.jpg" alt="img">
+											<h2>Ship Your Idea</h2>
+											<div class="star-rating">
+												<span style="width:86.6%">Rated <strong
+							class="rating">4.33</strong> out of 5</span>
+											</div>
+											<span class="price">
+												<span>
+													<span>$</span>20.00
+												</span>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-product-right.html" class="button product_type_variable add_to_cart_button">Select options</a>
+									</li>
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<span class="onsale">Sale!</span>
+											<img src="images/shop/07.jpg" alt="img">
+											<h2>Ship Your Idea</h2>
+											<div class="star-rating">
+												<span style="width:80%">Rated <strong
+							class="rating">4.00</strong> out of 5</span>
+											</div>
+											<span class="price">
+												<span>
+													<span>$</span>30.00
+												</span> – <span class="woocommerce-Price-amount amount">
+													<span>$</span>35.00
+												</span>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-product-right.html" class="button product_type_variable add_to_cart_button">Select options</a>
+									</li>
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<img src="images/shop/24.jpg" alt="img">
+											<h2>Ship Your Idea</h2>
+											<span class="price">
+												<span>
+													<span>$</span>15.00
+												</span>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-cart.html" class="button product_type_simple add_to_cart_button">Add to
+											cart</a>
+									</li>
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<img src="images/shop/15.jpg" alt="img">
+											<h2>Woo Album #1</h2>
+											<span class="price">
+												<span>
+													<span>$</span>9.00
+												</span>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-cart.html" class="button product_type_simple add_to_cart_button">Add to
+											cart</a>
+									</li>
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<img src="images/shop/16.jpg" alt="img">
+											<h2>Woo Album #2</h2>
+											<div class="star-rating">
+												<span style="width:80%">Rated <strong
+							class="rating">4.00</strong> out of 5</span>
+											</div>
+											<span class="price">
+												<span>
+													<span>$</span>9.00
+												</span>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-cart.html" class="button product_type_simple add_to_cart_button">Add to
+											cart</a>
+									</li>
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<img src="images/shop/17.jpg" alt="img">
+											<h2>Woo Album #3</h2>
+											<div class="star-rating">
+												<span style="width:60%">Rated <strong
+							class="rating">3.00</strong> out of 5</span>
+											</div>
+											<span class="price">
+												<span>
+													<span>$</span>9.00
+												</span>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-cart.html" class="button product_type_simple add_to_cart_button">Add to
+											cart</a>
+									</li>
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<img src="images/shop/19.jpg" alt="img">
+											<h2>Woo Album #4</h2>
+											<div class="star-rating">
+												<span style="width:100%">Rated <strong
+							class="rating">5.00</strong> out of 5</span>
+											</div>
+											<span class="price">
+												<span>
+													<span>$</span>9.00
+												</span>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-cart.html" class="button product_type_simple add_to_cart_button">Add to
+											cart</a>
+									</li>
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<img src="images/shop/06.jpg" alt="img">
+											<h2>Woo Logo</h2>
+											<div class="star-rating">
+												<span style="width:80%">Rated <strong
+							class="rating">4.00</strong> out of 5</span>
+											</div>
+											<span class="price">
+												<span>
+													<span>$</span>35.00
+												</span>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-cart.html" class="button product_type_simple add_to_cart_button">Add to
+											cart</a>
+									</li>
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<img src="images/shop/28.jpg" alt="img">
+											<h2>Woo Logo</h2>
+											<span class="price">
+												<span>
+													<span>$</span>15.00
+												</span>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-cart.html" class="button product_type_simple add_to_cart_button">Add to
+											cart</a>
+									</li>
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<span class="onsale">Sale!</span>
+											<img src="images/shop/08.jpg" alt="img">
+											<h2>Woo Logo</h2>
+											<div class="star-rating">
+												<span style="width:80%">Rated <strong
+							class="rating">4.00</strong> out of 5</span>
+											</div>
+											<span class="price">
+												<del>
+													<span>
+														<span>$</span>20.00
+													</span>
+												</del>
+												<ins>
+													<span>
+														<span>$</span>18.00
+													</span>
+												</ins>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-cart.html" class="button product_type_simple add_to_cart_button">Add to
+											cart</a>
+									</li>
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<img src="images/shop/13.jpg" alt="img">
+											<h2>Woo Ninja</h2>
+											<span class="price">
+												<span>
+													<span>$</span>20.00
+												</span>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-cart.html" class="button product_type_simple add_to_cart_button">Add to
+											cart</a>
+									</li>
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<img src="images/shop/02.jpg" alt="img">
+											<h2>Woo Ninja</h2>
+											<div class="star-rating">
+												<span style="width:90%">Rated <strong
+							class="rating">4.50</strong> out of 5</span>
+											</div>
+											<span class="price">
+												<span>
+													<span>$</span>35.00
+												</span>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-cart.html" class="button product_type_simple add_to_cart_button">Add to
+											cart</a>
+									</li>
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<img src="images/shop/27.jpg" alt="img">
+											<h2>Woo Ninja</h2>
+											<div class="star-rating">
+												<span style="width:80%">Rated <strong
+							class="rating">4.00</strong> out of 5</span>
+											</div>
+											<span class="price">
+												<span>
+													<span>$</span>15.00
+												</span>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-cart.html" class="button product_type_simple add_to_cart_button">Add to
+											cart</a>
+									</li>
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<img src="images/shop/18.jpg" alt="img">
+											<h2>Woo Single #1</h2>
+											<span class="price">
+												<span>
+													<span>$</span>3.00
+												</span>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-cart.html" class="button product_type_simple add_to_cart_button">Add to
+											cart</a>
+									</li>
+
+
+									<li class="product">
+										<a href="shop-product-right.html">
+											<span class="onsale">Sale!</span>
+											<img src="images/shop/20.jpg" alt="img">
+											<h2>Woo Single #2</h2>
+											<div class="star-rating">
+												<span style="width:90%">Rated <strong
+							class="rating">4.50</strong> out of 5</span>
+											</div>
+											<span class="price">
+												<del>
+													<span>
+														<span>$</span>3.00
+													</span>
+												</del>
+												<ins>
+													<span>
+														<span>$</span>2.00
+													</span>
+												</ins>
+											</span>
+										</a>
+										<a rel="nofollow" href="shop-cart.html" class="button product_type_simple add_to_cart_button">Add to
+											cart</a>
+									</li>
+
+								</ul>
+							</div>
+							<!-- columns 2 -->
+
+							<nav class="woocommerce-pagination">
+								<ul class="page-numbers">
+									<li>
+										<span class="page-numbers current">1</span>
+									</li>
+									<li>
+										<a class="page-numbers" href="shop-right.html">2</a>
+									</li>
+									<li>
+										<a class="next page-numbers" href="shop-right.html"><i class="fas fa-chevron-right"></i></a>
+									</li>
+								</ul>
+							</nav>
+
+						</main>
+
+						<aside class="col-lg-5 col-xl-4 mb-0">
+							<div class="widget woocommerce widget_product_categories">
+								<h3 class="widget-title">Categories</h3>
+								<ul class="product-categories">
+									<li class="cat-item cat-parent">
+										<a href="shop-right.html">Clothing</a>
+										<span class="count">(12)</span>
+										<ul class="children">
+											<li class="cat-item">
+												<a href="shop-right.html">Hoodies</a>
+												<span class="count">(46)</span>
+											</li>
+											<li class="cat-item">
+												<a href="shop-right.html">T-shirts</a>
+												<span class="count">(165)</span>
+											</li>
+										</ul>
+									</li>
+									<li class="cat-item cat-parent">
+										<a href="shop-right.html">Music</a>
+										<span class="count">(16)</span>
+										<ul class="children">
+											<li class="cat-item">
+												<a href="shop-right.html">Albums</a>
+												<span class="count">(24)</span>
+											</li>
+											<li class="cat-item">
+												<a href="shop-right.html">Singles</a>
+												<span class="count">(2)</span>
+											</li>
+										</ul>
+									</li>
+									<li class="cat-item">
+										<a href="shop-right.html">Posters</a>
+										<span class="count">(45)</span>
+									</li>
+								</ul>
+							</div>
+
+
+							<div class="widget widget_product_search">
+
+								<h3 class="widget-title">Search</h3>
+
+								<form role="search" class="woocommerce-product-search" action="/">
+
+									<label class="screen-reader-text" for="woocommerce-product-search-field-widget">
+										Search for:
+									</label>
+
+									<input type="search" id="woocommerce-product-search-field-widget" class="search-field" placeholder="Search products..." value="" name="search">
+									<input type="submit" value="Search">
+								</form>
+							</div>
+
+							<div class="widget woocommerce widget_shopping_cart">
+
+								<h3 class="widget-title">Shopping Cart</h3>
+
+								<div class="widget_shopping_cart_content">
+
+									<ul class="woocommerce-mini-cart cart_list product_list_widget ">
+										<li class="woocommerce-mini-cart-item mini_cart_item">
+											<a href="#" class="remove" aria-label="Remove this item" data-product_id="73" data-product_sku="">×</a>
+											<a href="shop-product-right.html">
+												<img src="images/shop/26.jpg" alt="img">Quidem repellat repellendus sit suscipit
+											</a>
+
+											<span class="quantity">1 ×
+												<span class="woocommerce-Price-amount amount">
+													<span class="woocommerce-Price-currencySymbol">$</span>
+													12.00
+												</span>
+											</span>
+										</li>
+										<li class="woocommerce-mini-cart-item mini_cart_item">
+											<a href="#" class="remove" aria-label="Remove this item" data-product_id="76" data-product_sku="">×</a>
+											<a href="shop-product-right.html">
+												<img src="images/shop/26.jpg" alt="img">Laudantium nostrum quas quasi quisquam
+											</a>
+
+											<span class="quantity">1 ×
+												<span class="woocommerce-Price-amount amount">
+													<span class="woocommerce-Price-currencySymbol">$</span>
+													15.00
+												</span>
+											</span>
+										</li>
+									</ul>
+
+									<p class="woocommerce-mini-cart__total total">
+										<strong>Subtotal:</strong>
+										<span class="woocommerce-Price-amount amount">
+											<span class="woocommerce-Price-currencySymbol">$</span>
+											27.00
+										</span>
+									</p>
+
+									<p class="woocommerce-mini-cart__buttons buttons">
+										<a href="shop-cart.html" class="button wc-forward">View cart</a>
+									</p>
+								</div>
+							</div>
+
+
+							<div class="widget woocommerce widget_top_rated_products">
+								<h3 class="widget-title">Top Products</h3>
+								<ul class="product_list_widget">
+									<li>
+										<a href="shop-product-right.html">
+											<img src="images/shop/01.jpg" alt="img">
+											<span class="product-title">Ninja Silhouette</span>
+										</a>
+										<div class="star-rating">
+											<span style="width:100%">Rated
+												<strong class="rating">5.00 </strong>
+												out of 5
+											</span>
+										</div>
+										<span class="woocommerce-Price-amount amount">
+											<span class="woocommerce-Price-currencySymbol">$</span>
+											20.00
+										</span>
+									</li>
+
+									<li>
+										<a href="shop-product-right.html">
+											<img src="images/shop/02.jpg" alt="img">
+											<span class="product-title">Woo Album #4</span>
+										</a>
+										<div class="star-rating">
+											<span style="width:100%">Rated
+												<strong class="rating">5.00</strong>
+												out of 5
+											</span>
+										</div>
+										<span class="woocommerce-Price-amount amount">
+											<span class="woocommerce-Price-currencySymbol">$</span>
+											9.00
+										</span>
+									</li>
+
+									<li>
+										<a href="shop-product-right.html">
+											<img src="images/shop/03.jpg" alt="img">
+											<span class="product-title">Happy Ninja</span>
+										</a>
+										<div class="star-rating">
+											<span style="width:100%">Rated
+												<strong class="rating">5.00</strong>
+												out of 5
+											</span>
+										</div>
+										<span class="woocommerce-Price-amount amount">
+											<span class="woocommerce-Price-currencySymbol">$</span>
+											18.00
+										</span>
+									</li>
+
+									<li>
+										<a href="shop-product-right.html">
+											<img src="images/shop/04.jpg" alt="img">
+											<span class="product-title">Patient Ninja</span>
+										</a>
+										<div class="star-rating">
+											<span style="width:93.4%">Rated
+												<strong class="rating">4.67</strong>
+												out of 5
+											</span>
+										</div>
+										<span class="woocommerce-Price-amount amount">
+											<span class="woocommerce-Price-currencySymbol">$</span>
+											35.00
+										</span>
+									</li>
+
+									<li>
+										<a href="shop-product-right.html">
+											<img src="images/shop/05.jpg" alt="img">
+											<span class="product-title">Premium Quality</span>
+										</a>
+										<div class="star-rating">
+											<span style="width:90%">Rated
+												<strong class="rating">4.50</strong>
+												out of 5
+											</span>
+										</div>
+										<span class="woocommerce-Price-amount amount">
+											<span class="woocommerce-Price-currencySymbol">$</span>
+											20.00
+										</span>
+									</li>
+								</ul>
+							</div>
+
+
+							<div class="widget woocommerce widget_price_filter">
+
+								<h3 class="widget-title">Price Filter</h3>
+
+								<form method="get" action="/">
+									<div class="price_slider_wrapper">
+										<div class="price_slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="">
+											<div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 10%; width: 70%;">
+
+											</div>
+											<span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 10%;">
+												<span class="from">$21</span>
+											</span>
+											<span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 80%;">
+												<span class="to">$28</span>
+											</span>
+										</div>
+										<div class="price_slider_amount">
+											<input type="text" id="min_price" name="min_price" value="" data-min="20" placeholder="Min price" style="display: none;">
+											<input type="text" id="max_price" name="max_price" value="" data-max="30" placeholder="Max price" style="display: none;">
+											<button type="submit" class="button mt-4">Filter</button>
+
+											<div class="clear"></div>
+
+										</div>
+									</div>
+								</form>
+							</div>
+
+
+							<div class="widget woocommerce widget_layered_nav">
+								<h3 class="widget-title">Filters</h3>
+								<ul>
+									<li class="wc-layered-nav-term chosen">
+										<a href="shop-right.html">Black</a>
+										<span class="count">(85)</span>
+									</li>
+									<li class="wc-layered-nav-term">
+										<a href="#">Blue</a>
+										<span class="count">(12)</span>
+									</li>
+									<li class="wc-layered-nav-term">
+										<a href="#">Green</a>
+										<span class="count">(41)</span>
+									</li>
+									<li class="wc-layered-nav-term">
+										<a href="#">Yellow</a>
+										<span class="count">(12)</span>
+									</li>
+									<li class="wc-layered-nav-term">
+										<a href="#">Red</a>
+										<span class="count">(26)</span>
+									</li>
+								</ul>
+							</div>
+
+
+							<div class="widget woocommerce widget_product_tag_cloud">
+
+								<h3 class="widget-title">Price Filter</h3>
+
+								<div class="tagcloud">
+									<a href="shop-right.html" class="tag-cloud-link" aria-label="album (1 product)">
+										Album
+									</a>
+									<a href="shop-right.html" class="tag-cloud-link" aria-label="premium (1 product)">
+										Premium
+									</a>
+									<a href="shop-right.html" class="tag-cloud-link" aria-label="product (1 product)">
+										Product
+									</a>
+									<a href="shop-right.html" class="tag-cloud-link" aria-label="single (1 product)">
+										Single
+									</a>
+								</div>
+							</div>
+
+
+							<div class="widget woocommerce widget_layered_nav">
+								<h3 class="widget-title">Colors Filter</h3>
+
+								<select class="dropdown_layered_nav_color">
+									<option value="">Any color</option>
+									<option value="black">Black</option>
+									<option value="blue">Blue</option>
+									<option value="green">Green</option>
+								</select>
+
+							</div>
+
+						</aside>
+
+					</div>
+
+				</div>
+			</section>
+
+			<footer class="page_footer ds s-pt-60 s-pb-15 s-pb-lg-30 s-pt-lg-90 s-pb-xl-40 s-pt-xl-120 c-mb-20 c-gutter-30">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-6 col-xl-3 text-center text-md-left animate" data-animation="fadeInUp">
+
+							<div class="widget widget_text">
+								<h3 class="widget-title special-heading underline">About Us</h3>
+
+								<p>
+									Our firm is one of the world's leading management consulting firms. We work with top executives to help them make better decisions.
+								</p>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-xl-3 text-center text-md-left animate" data-animation="fadeInUp">
+							<div class="widget widget_nav_menu">
+								<h3 class="widget-title special-heading underline">Links</h3>
+								<div class="row c-gutter-30">
+									<div class="col-md-6 mb-0">
+										<ul class="menu mb-0 list-bordered">
+											<li class="border-top-0">
+												<a href="contact.html">Contact</a>
+											</li>
+											<li>
+												<a href="#">Manifesto</a>
+											</li>
+											<li>
+												<a href="events-full.html">Events</a>
+											</li>
+											<li>
+												<a href="team-single.html">Members</a>
+											</li>
+											<li>
+												<a href="#">Issure</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-md-6">
+										<ul class="menu list-bordered">
+											<li class="border-top-0">
+												<a href="#">Issure</a>
+											</li>
+											<li>
+												<a href="faq.html">FAQ</a>
+											</li>
+											<li>
+												<a href="#">Our Party</a>
+											</li>
+											<li>
+												<a href="#">Donate</a>
+											</li>
+											<li class="border-bottom-0">
+												<a href="#">Volunteer</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-xl-3 text-center text-md-left animate" data-animation="fadeInUp">
+							<div class="widget widget_instagram">
+								<h3 class="widget-title underline special-heading">Instagram</h3>
+								<div class="instafeed"></div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-xl-3 text-center text-md-left animate" data-animation="fadeInUp">
+							<div class="widget widget_mailchimp">
+
+								<h3 class="widget-title underline special-heading">Newsletter</h3>
+
+								<p>
+									Subscribe to our Newsletter to be updated.
+								</p>
+
+								<form class="signup" action="/">
+									<label for="mailchimp_email">
+										<span class="screen-reader-text ">Subscribe:</span>
+									</label>
+
+									<input id="mailchimp_email" name="email" type="email" class="form-control mailchimp_email" placeholder="Email">
+
+									<button type="submit" class="search-submit">
+										<span class="screen-reader-text">Subscribe</span>
+									</button>
+									<div class="response"></div>
+								</form>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<section class="page_copyright ds ms s-pt-30 s-pb-20 c-mb-10 c-mb-lg-0 s-py-lg-20">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="divider-25 d-none d-lg-block"></div>
+						<div class="col-lg-8">
+							<div class="social-icons social-icons-tilled text-center text-lg-left w-100">
+								<a href="#" class="fab fa-facebook-square" title="facebook"><span>facebook</span></a>
+								<a href="#" class="fab fa-twitter-square " title="twitter"><span>twitter</span> </a>
+								<a href="#" class="fab fa-instagram " title="instagram"><span>instagram</span></a>
+								<a href="#" class="fab fa-youtube" title="youtube"><span>youtube</span></a>
+							</div>
+						</div>
+						<div class="col-lg-4 text-center text-lg-right">
+							<p>Copyright <span class="copyright_year">2019</span> All Rights Reserved</p>
+						</div>
+						<div class="divider-25 d-none d-lg-block"></div>
+					</div>
+				</div>
+			</section>
+
+
+		</div><!-- eof #box_wrapper -->
+	</div><!-- eof #canvas -->
+
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/switcher.js"></script>
+
+</body>
+
+</html>
