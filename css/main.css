@@ -20957,7 +20957,7 @@ body.active-side-header.slide-right .page_header_side {
 }
 
 .page_slider h2 {
-	line-height: 1.15;
+	line-height: 1.2;
 	margin: 0;
 }
 
@@ -21324,15 +21324,42 @@ body.active-side-header.slide-right .page_header_side {
 	}
 }
 
+/* Banner 1 */
+.page_slider.home_slider1 .banner1  .intro_layers_wrapper::before,
+.page_slider.home_slider1 .banner1  .intro_layers_wrapper::after {
+    width: 30%;
+}
+.page_slider.home_slider1 .banner1  .intro_layers_wrapper::after {
+    width: 30%;
+}
+
+/* Banner 2 */
+.page_slider.home_slider1 .banner2  .intro_layers_wrapper::before,
+.page_slider.home_slider1 .banner2  .intro_layers_wrapper::after {
+    width: 25%;
+}
+.page_slider.home_slider1 .banner2  .intro_layers_wrapper::after {
+    width: 25%;
+}
+
+
+
+.page_slider.home_slider1 .intro_layers_wrapper .party-logo {
+	position: absolute;
+    left: 50%;
+    top: -75px;
+    margin-left: -75px;
+}
+
 .page_slider.home_slider1 .intro_layers_wrapper {
 	border: 3px solid #fff;
 	border-bottom: none;
-	bottom: 33%;
+	bottom: 27%;
 	height: auto;
 	justify-content: flex-start;
 	left: 0;
-	max-width: 370px;
-	padding: 53px 50px 49px 56px;
+	max-width: 520px;
+	padding: 100px 50px 50px 50px;
 	right: auto;
 	top: auto;
 }
@@ -21366,7 +21393,8 @@ body.active-side-header.slide-right .page_header_side {
 
 .page_slider.home_slider1 .intro_layers_wrapper .signature {
 	bottom: 0;
-	left: 40px;
+	left: 50%;
+    margin-left: -85px;
 	position: absolute;
 	-webkit-transform: translateY(55%);
 	transform: translateY(55%);
