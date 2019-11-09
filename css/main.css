@@ -25478,6 +25478,10 @@ section.ds .top-subtitle {
 	justify-content: center;
 	margin-top: 55px;
 }
+.map-section .meta p{
+	width: 100%;
+    text-align: center;
+}
 
 .map-section .meta .icon-inline:not(:last-child) {
 	margin-right: 17px;
