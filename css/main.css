@@ -25944,6 +25944,46 @@ section.ds .top-subtitle {
 }
 
 
+/* Custom - start */
+.contact-block{
+	background-color : #f58220;
+}
+.contact-block .absolute-section{
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    /*font-weight: bold;
+    */left: 50%;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    width: 70%;
+    padding: 40px 40px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.contact-block .absolute-section .block{
+	margin-bottom: 30px;
+}
+.contact-block .absolute-section .block p,
+.contact-block .absolute-section .block li{
+	line-height:1.2;
+}
+.contact-block .absolute-section .block li a{
+	font-weight:bold;
+}
+.contact-block .absolute-section .block p a{
+	display: initial;
+	font-weight:bold;
+}
+
+
+
+/* Custom - end */
 
 
 /* Custom Media Query */
