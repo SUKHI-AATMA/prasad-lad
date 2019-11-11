@@ -22891,7 +22891,7 @@ h4.entry-title {
 
 @media (max-width: 450px) {
 	.post .item-media + .item-content {
-		padding: 20px 25px;
+		padding: 20px 15px;
 	}
 }
 
