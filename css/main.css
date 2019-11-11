@@ -25967,6 +25967,24 @@ section.ds .top-subtitle {
 
 
 /* Custom - start */
+
+.flex-rev-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+.pb-50 {
+    padding-bottom: 50px;
+}
+.align-items-center {
+    align-items: center !important;
+}
+
+.justify-content-between {
+    justify-content: space-between !important;
+}
+
 .contact-block{
 	background-color : #f58220;
 }
