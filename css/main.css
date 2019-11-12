@@ -25968,6 +25968,24 @@ section.ds .top-subtitle {
 
 /* Custom - start */
 
+.concept-vid .about-video-right{
+	background: url(../images/bg-bjp-2.jpg) no-repeat center;
+    background-size: cover;
+    height: 330px;
+	overflow: hidden;
+	position: relative;
+}
+
+.about-video-right .overlay-bg {
+    background: #04091e;
+	opacity: .8;
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
 .flex-rev-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -26063,8 +26081,18 @@ section.ds .top-subtitle {
 .contact-volunteer-block  .absolute-section a span{
 	font-size: 32px;
     line-height: 1.6;
-
 }
+
+/* contact page  */
+.contact-section .icon-box a:hover{
+	color : #ff9224;
+}
+
+
+.about-section .container{
+	padding-bottom : 0;
+}
+
 
 /* Custom - end */
 

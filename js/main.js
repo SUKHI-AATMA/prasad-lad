@@ -1843,6 +1843,7 @@ $(document).ready(function() {
 	initGoogleMap();
 });
 
+
 $window.on('load', function(){
 	windowLoadInit();
 }); //end of "window load" event
