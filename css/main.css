@@ -23889,14 +23889,14 @@ img.absolute_image {
 }
 
 .page_title {
-	/* background-image: url("../images/parallax/breadcrumbs.jpg"); */
+	background-image: url("../images/bg-bjp-2.jpg");
 	padding-bottom: 50px;
 	padding-top: 70px;
 }
 
-.page_title.ds{
+/* .page_title.ds{
 	background-color: #ff9224;
-}
+} */
 .page_title.s-overlay:before {
 	opacity: 0.3;
 }
