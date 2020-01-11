@@ -817,6 +817,7 @@ function documentReadyInit() {
 
 		//sending form data to PHP server if fields are not empty
 		var request = $form.serialize();
+		// console.log(request);
 		var ajax = jQuery.post( "contact-form.php", request )
 			.done(function( data ) {
 				$($form).find('[type="submit"]').attr('disabled', false).parent().append('<div class="contact-form-respond color-main mt-20">'+data+'</div>');

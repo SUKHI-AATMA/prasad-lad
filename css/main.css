@@ -26216,3 +26216,18 @@ section.ds .top-subtitle {
 }
 
 @media screen and (max-width: 360px) {}
+
+@media (max-width: 768px) {
+	.contact-block .absolute-section {
+	    position: relative;
+	    margin: 50px auto;
+	    left: auto;
+	    top: auto;
+	    transform: none;
+	}
+
+	.contact-block .absolute-section .block p a {
+	    display: inline-block;
+	    word-break: break-word;
+	}
+}
